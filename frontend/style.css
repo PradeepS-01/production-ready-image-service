@@ -1,0 +1,25 @@
+.image-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+.image-preview {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.image-link {
+    word-break: break-all;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.copy-button {
+    padding: 5px 15px;
+}

@@ -1,0 +1,27 @@
+# ── Node.js dependencies ──────────────────────────────────
+# These will be installed fresh inside the container via RUN npm install
+node_modules/
+
+# ── Uploaded files ────────────────────────────────────────
+# These are volume-mounted at runtime; no need to bake them into the image
+uploads/
+
+# ── Logs ─────────────────────────────────────────────────
+npm-debug.log*
+*.log
+
+# ── Environment files ─────────────────────────────────────
+.env
+.env.*
+
+# ── OS generated ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Git ──────────────────────────────────────────────────
+.git
+.gitignore
+
+# ── Editor ───────────────────────────────────────────────
+.vscode/
+.idea/

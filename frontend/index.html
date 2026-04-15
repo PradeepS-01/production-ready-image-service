@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Upload</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Upload Images</h2>
+
+<form id="uploadForm" enctype="multipart/form-data">
+  
+  <!-- Upload Type -->
+  <label>Select Upload Type:</label>
+  <select id="uploadType" name="uploadType" onchange="toggleMode()">
+    <option value="single">Single Image</option>
+    <option value="multiple">Multiple Images</option>
+  </select>
+
+  <br><br>
+
+  <!-- Folder Name (only for multiple) -->
+  <div id="folderDiv" style="display:none;">
+    <label>Folder Name:</label>
+    <input type="text" name="folderName" placeholder="Enter folder name">
+  </div>
+
+  <br>
+
+  <!-- File Input -->
+  <input type="file" id="fileInput" name="images" accept="image/*">
+
+  <br><br>
+
+  <button type="submit">Upload</button>
+
+  <div id="output"></div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
